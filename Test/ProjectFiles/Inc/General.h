@@ -16,10 +16,10 @@
 #define FORWARDReSet() HAL_GPIO_WritePin(AUGER_FORWARD_GPIO_Port, AUGER_FORWARD_Pin, GPIO_PIN_RESET)
 #define BACKWARDSet() HAL_GPIO_WritePin(AUGER_BACKWARD_GPIO_Port, AUGER_BACKWARD_Pin, GPIO_PIN_SET)
 #define BACKWARDReSet() HAL_GPIO_WritePin(AUGER_BACKWARD_GPIO_Port, AUGER_BACKWARD_Pin, GPIO_PIN_RESET)
-
-#define NumOfTempData 6
-#define MaxCntVal 100
-
+/*Прочие макросы*/
+#define NumOfTempData 6 //размер массива данных с ацп кратное 2 (с ацп приходят значения с 2 каналов)
+#define MaxCntVal 100	//максимальное значение счетчика нажатия клавиши
+/*Переопределение дефолтного таска (в кубе объявлял как weak)*/
 void StartDefaultTask(void const * argument);
 
 #endif /* INC_GENERAL_H_ */
