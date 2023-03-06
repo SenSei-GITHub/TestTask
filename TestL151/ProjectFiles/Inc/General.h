@@ -10,7 +10,6 @@
 
 #include "stm32l1xx_hal.h"
 
-//#define Debug
 /*Макрос считывания нажатия кнопки*/
 #define ButtonBackRead() HAL_GPIO_ReadPin(Button_BACK_GPIO_Port,Button_BACK_Pin)
 /*Макросы включения выключения реле*/
